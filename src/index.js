@@ -8,8 +8,6 @@ module.exports = exports = ({
   // When the period of recurrances hasnt even begun yet
   if (_now < _from) return _from
 
-  // TODO: literally everything below here
-
   const lastDayOfNowMonth = new Date(Date.UTC(_now.getUTCFullYear(), _now.getUTCMonth() + 1, 0))
   const targetInNowMonth = Math.min(_from.getUTCDate(), lastDayOfNowMonth.getUTCDate())
 
