@@ -1,7 +1,7 @@
 {
   "name": "next-monthly",
   "version": "1.0.0",
-  "description": "",
+  "description": "Determines the next monthly occurence of a date, falling back on the last day of the month.",
   "main": "./src/index.js",
   "scripts": {
     "test": "jest --verbose --silent && eslint ."

@@ -1,6 +1,6 @@
 # next-monthly
 
-Determine the next monthly occurance, falling back on the last day of the month.
+Determine the next monthly occurence, falling back on the last day of the month.
 
 [ ![npm version](https://img.shields.io/npm/v/next-monthly.svg?style=flat) ](https://npmjs.org/package/next-monthly "View package")
 [ ![CI status](https://github.com/Sleavely/next-monthly/actions/workflows/node.js.yml/badge.svg) ](https://github.com/Sleavely/next-monthly/actions/workflows/node.js.yml "View workflow")
@@ -19,15 +19,14 @@ const nextMonthly = require('next-monthly')
 // Jan 31, Feb 28 or 29, etc.
 const lastDayOfThisMonth = nextMonthly()
 
-
-// If you want a specific date, like for charging users who signed up on the 30th (but sometimes on Feb 28, etc.)
+// If you want to charge users who signed up on the 30th (but sometimes on Feb 28, etc.)
 const nextBillingDate = nextMonthly({
-  from: new Date('1990-01-07T01:29:03.999Z'),
+  from: '1990-01-07T01:29:03.999Z',
 
   // Defaults to Date.now(). Only used here for demo purpose:
-  now:  new Date('2022-08-23T12:29:08.551Z'),
+  now:  '2022-08-23T12:29:08.551Z',
 })
-// Returns date:  2022-09-07T01:29:03.999Z
+// Date: 2022-09-07T01:29:03.999Z
 ```
 
 ## Options
