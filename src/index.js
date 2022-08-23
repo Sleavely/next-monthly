@@ -29,15 +29,5 @@ module.exports = exports = ({
     _from.getUTCMilliseconds(),
   ))
 
-  console.log({
-    _from,
-    _now,
-    nowMonth: _now.getUTCMonth(),
-    lastDayOfNowMonth,
-    targetInNowMonth,
-    targetMonthUTC,
-    nextDate,
-  })
-
   return nextDate
 }
