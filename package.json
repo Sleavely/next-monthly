@@ -1,12 +1,17 @@
 {
   "name": "next-monthly",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "",
   "main": "./src/index.js",
   "scripts": {
     "test": "jest --verbose --silent && eslint ."
   },
-  "keywords": ["recurring", "monthly", "dates", "billing"],
+  "keywords": [
+    "recurring",
+    "monthly",
+    "dates",
+    "billing"
+  ],
   "author": "Joakim Hedlund <contact@joakimhedlund.com>",
   "license": "MIT",
   "devDependencies": {
