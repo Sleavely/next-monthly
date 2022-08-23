@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/Sleavely/next-monthly/compare/v1.0.0...v1.0.1) (2022-08-23)
+
+
+### Bug Fixes
+
+* remove console.log of internals ([8a23b66](https://github.com/Sleavely/next-monthly/commit/8a23b66838b483405ab246eb046acaf9c7eb2699))
+
 ## 1.0.0 (2022-08-23)
 
 
