@@ -1,6 +1,6 @@
 {
   "name": "next-monthly",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Determines the next monthly occurence of a date, falling back on the last day of the month.",
   "main": "./src/index.js",
   "types": "./index.d.ts",

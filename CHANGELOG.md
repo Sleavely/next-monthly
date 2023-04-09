@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.3](https://github.com/Sleavely/next-monthly/compare/v1.0.2...v1.0.3) (2023-04-09)
+
+
+### Bug Fixes
+
+* respect time, not just dates ([0da5db0](https://github.com/Sleavely/next-monthly/commit/0da5db03aa79ef70367bdeb783f105f0a0649d4e))
+
 ## [1.0.2](https://github.com/Sleavely/next-monthly/compare/v1.0.1...v1.0.2) (2022-08-23)
 
 
