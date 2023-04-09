@@ -48,6 +48,20 @@ it('returns 29th on leap year when target is 31st', () => {
   expect(output.toJSON()).toBe('2000-02-29T00:00:00.000Z')
 })
 
+it('respects time, not just dates', () => {
+  // one millisecond after - yields next month
+  expect(nextMonthly({
+    from: new Date('1990-01-07T01:29:03.999Z'),
+    now: new Date('2023-01-07T01:29:04.000Z'),
+  }).toJSON()).toBe('2023-02-07T01:29:03.999Z')
+
+  // a few ms before - yields today
+  expect(nextMonthly({
+    from: new Date('1990-01-07T01:29:03.999Z'),
+    now: new Date('2023-01-07T01:29:03.888Z'),
+  }).toJSON()).toBe('2023-01-07T01:29:03.999Z')
+})
+
 it('behaves like README', () => {
   const nextBillingDate = nextMonthly({
     from: new Date('1990-01-07T01:29:03.999Z'),

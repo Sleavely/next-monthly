@@ -1,4 +1,4 @@
-module.exports = exports = ({
+const nextMonthly = ({
   from = new Date('0000-01-31T00:00:00.000Z'),
   now = Date.now(),
 } = {}) => {
@@ -27,5 +27,10 @@ module.exports = exports = ({
     _from.getUTCMilliseconds(),
   ))
 
+  // if nextDate is on the same date as _now and has already passed
+  if (nextDate <= _now) return nextMonthly({ from, now: nextDate.valueOf() + (86400 * 1000) })
+
   return nextDate
 }
+
+module.exports = exports = nextMonthly
